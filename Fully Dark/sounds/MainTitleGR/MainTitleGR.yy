@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"MainTitleGR",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":156.0,
+  "exportDir":"",
+  "name":"MainTitleGR",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/MainMenu/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"MainTitleGR.wav",
+  "volume":1.0,
+}
