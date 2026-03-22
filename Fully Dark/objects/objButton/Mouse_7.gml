@@ -9,6 +9,7 @@ switch (menuID) {
             break
         case 0:
             room_goto(Muckshore);
+            audio_sound_gain(MainTitleGR, 0, 1000);
             break
     } 
     case 0:

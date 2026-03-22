@@ -1,5 +1,6 @@
+audio_stop_all();
+audio_group_load(Music);
+audio_group_load(SFX);
 layer_set_visible("mainMenuUI", true);
 layer_set_visible("pauseMenuUI", false);
-audio_play_sound(MainTitleGR, 0, true);
-audio_sound_gain(MainTitleGR, 0, 0);
-audio_sound_gain(MainTitleGR, 1, 4000);
+alarm[0] = game_get_speed(gamespeed_fps)/2;
