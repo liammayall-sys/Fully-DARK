@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/MainMenu/Objects.yy",
+    "path":"folders/Rooms/MainMenu/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,6 +31,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"buttonID","filters":[],"listItems":[],"multiselect":false,"name":"buttonID","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"menuID","filters":[],"listItems":[],"multiselect":false,"name":"menuID","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

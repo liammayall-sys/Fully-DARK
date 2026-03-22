@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"MainMenuParams",
+  "%Name":"obj_PlayerController",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":27,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"MainMenuParams",
+  "name":"obj_PlayerController",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/Rooms/MainMenu/Objects.yy",
+    "path":"folders/Rooms/Muckshore/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

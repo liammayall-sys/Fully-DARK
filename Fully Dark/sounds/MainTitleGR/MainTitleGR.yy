@@ -2,8 +2,8 @@
   "$GMSound":"v2",
   "%Name":"MainTitleGR",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"Music",
+    "path":"audiogroups/Music",
   },
   "bitDepth":1,
   "channelFormat":1,
@@ -15,7 +15,7 @@
   "name":"MainTitleGR",
   "parent":{
     "name":"Sounds",
-    "path":"folders/MainMenu/Sounds.yy",
+    "path":"folders/Rooms/MainMenu/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
