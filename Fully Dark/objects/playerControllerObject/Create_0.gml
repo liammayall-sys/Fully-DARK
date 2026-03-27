@@ -1,0 +1,1 @@
+canBePaused = true;

@@ -905,7 +905,7 @@
   "name":"pooFont",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Rooms/MainMenu/Fonts.yy",
+    "path":"folders/Global/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_PlayerController",
+  "%Name":"tickboxObject",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":27,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_PlayerController",
+  "name":"tickboxObject",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/Rooms/Muckshore/Objects.yy",
+    "path":"folders/Global/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -26,11 +26,16 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"tickboxID","filters":[],"listItems":[],"multiselect":false,"name":"tickboxID","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Tick",
+    "path":"sprites/Tick/Tick.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
