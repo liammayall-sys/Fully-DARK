@@ -2,11 +2,11 @@ image_index = 0;
 if (menuID ==3){
         switch (buttonID) {
         	case 0:
-                if (global.mainMenuCheck == 1){
+                if (mainMenuCheck == 1){
                     layer_set_visible("pauseMenuUI", true);
                     layer_set_visible("Settings", false);
                 }
-                if (global.mainMenuCheck == 0){
+                if (mainMenuCheck == 0){
                     layer_set_visible("mainMenuUI", true);
                     layer_set_visible("Settings", false);
                 }
@@ -101,7 +101,7 @@ if (menuID == 1) { //Main menu
             case 1: //Settings
                 layer_set_visible("mainMenuUI", false);
                 layer_set_visible("Settings", true);
-                global.mainMenuCheck = 0;
+                mainMenuCheck = 0;
                 break
             case 0: //New Game
                 room_goto(Muckshore);
@@ -122,7 +122,7 @@ if (menuID == 0) { //Pause Menu
                 tickboxObject.tickCheck(playerObject.partyArray);
                 break 
             case 1: //Settings
-                global.mainMenuCheck = 1;
+                mainMenuCheck = 1;
                 layer_set_visible("pauseMenuUI", false);
                 layer_set_visible("Settings", true);
                 break 
