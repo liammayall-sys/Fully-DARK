@@ -9,6 +9,4 @@ Sandra = 0;
 Helene = 0;
 Mira = 0;
 
-if(!variable_global_exists("mainMenuCheck")){
-    global.mainMenuCheck = 0; 
-}
+mainMenuCheck = 0; 
