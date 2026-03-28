@@ -1,7 +1,7 @@
 image_index = 0;
 if (menuID ==3){
         switch (buttonID) {
-        	case 0:
+        	case 0: //Audio Settings
                 if (global.mainMenuCheck == 1){
                     layer_set_visible("pauseMenuUI", true);
                     layer_set_visible("Settings", false);
@@ -15,81 +15,37 @@ if (menuID ==3){
 }
 if (menuID == 2) {
         switch (buttonID) {
+            case 0: //Caster The Skeleton
+                tickChange();
+                initialiseTickbox(tickX, tickY, fullParty, spacing);
+                break
+            case 1: //Samaroth Svaeda
+                tickChange();
+                initialiseTickbox(tickX, tickY, fullParty, spacing);
+                break
+            case 2: //Astred Houlstrom
+                tickChange();
+                initialiseTickbox(tickX, tickY, fullParty, spacing);
+                break
+            case 3: //Breezy Bill Jenkins
+                tickChange();
+                initialiseTickbox(tickX, tickY, fullParty, spacing);
+                break
+            case 4: //Alessandra Agosto
+                tickChange();
+                initialiseTickbox(tickX, tickY, fullParty, spacing);
+                break
+            case 5: //Helene
+                tickChange();
+                initialiseTickbox(tickX, tickY, fullParty, spacing);
+                break
+            case 6: //Mira
+                tickChange();
+                initialiseTickbox(tickX, tickY, fullParty, spacing);
+                break
             case 7: //Back Button
                 layer_set_visible("partySettingsUI", false);
                 layer_set_visible("pauseMenuUI", true);
-                break
-            case 6: //Caster The Skeleton
-                if (playerObject.partyArray[0] == 1) {
-                    playerObject.partyArray[@ 0] = 0;
-                    Caster = 0;
-                }
-                else {
-                    playerObject.partyArray[@ 0] = 1
-                    Caster = 1;
-                }
-                
-                break
-            case 5: //Samaroth Svaeda
-                if (playerObject.partyArray[1] == 1) {
-                    playerObject.partyArray[@ 1] = 0;
-                    Sam = 0;
-                }
-                else {
-                    playerObject.partyArray[@ 1] = 1
-                    Sam = 1;
-                }
-                
-                break
-            case 4: //Astred Houlstrom
-                if (playerObject.partyArray[2] == 1) {
-                    playerObject.partyArray[@ 2] = 0;
-                    Astred = 0;
-                }
-                else {
-                    playerObject.partyArray[@ 2] = 1
-                    Astred = 1;
-                }
-                break
-            case 3: //Breezy Bill Jenkins
-                if (playerObject.partyArray[3] == 1) {
-                    playerObject.partyArray[@ 3] = 0;
-                    Bill = 0;
-                }
-                else {
-                    playerObject.partyArray[@ 3] = 1
-                    Bill = 1;
-                }
-                break
-            case 2: //Alessandra Agosto
-                if (playerObject.partyArray[4] == 1) {
-                    playerObject.partyArray[@ 4] = 0;
-                    Sandra = 0;
-                }
-                else {
-                    playerObject.partyArray[@ 4] = 1
-                    Sandra = 1;
-                }
-                break
-            case 1: //Helene
-                if (playerObject.partyArray[5] == 1) {
-                    playerObject.partyArray[@ 5] = 0;
-                    Helene = 0;
-                }
-                else {
-                    playerObject.partyArray[@ 5] = 1
-                    Helene = 1;
-                }
-                break
-            case 0: //Mira
-                if (playerObject.partyArray[6] == 1) {
-                    playerObject.partyArray[@ 6] = 0;
-                    Mira = 0;
-                }
-                else {
-                    playerObject.partyArray[@ 6] = 1
-                    Mira = 1;
-                }
                 break
         }
 }
@@ -119,7 +75,7 @@ if (menuID == 0) { //Pause Menu
             case 2: //Party
                 layer_set_visible("pauseMenuUI", false);
                 layer_set_visible("partySettingsUI", true);
-                tickboxObject.initialiseTickbox(253, -332, 7, -105);
+                initialiseTickbox(1247, 19, 7, 105);
                 break 
             case 1: //Settings
                 global.mainMenuCheck = 1;
