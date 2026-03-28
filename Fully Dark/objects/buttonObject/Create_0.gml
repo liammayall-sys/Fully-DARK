@@ -9,4 +9,4 @@ Sandra = 0;
 Helene = 0;
 Mira = 0;
 
-mainMenuCheck = 0; 
+global.mainMenuCheck = 0; 
