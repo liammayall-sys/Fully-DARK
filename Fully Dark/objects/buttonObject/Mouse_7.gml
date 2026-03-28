@@ -102,7 +102,7 @@ if (menuID == 0) { //Pause Menu
             case 2: //Party
                 layer_set_visible("pauseMenuUI", false);
                 layer_set_visible("partySettingsUI", true);
-                tickboxObject.tickCheck(playerObject.partyArray);
+                tickboxObject.initialiseTickbox(253, -332, 7, -105);
                 break 
             case 1: //Settings
                 break 
