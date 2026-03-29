@@ -13,3 +13,6 @@ sfxvol = 1;
 
 global.musicvol = 1;
 global.sfxvol = 1;
+
+audio_group_load(Music);
+audio_group_load(SFX);

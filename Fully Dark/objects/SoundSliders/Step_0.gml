@@ -10,3 +10,9 @@ if(pos< 0) pos = 2;
     
 if(pos>2) pos = 0;
 
+global.musicvol = musicvol * mastervol;
+global.sfxvol = sfxvol * mastervol;
+
+audio_group_set_gain(Music, global.musicvol, 0);
+audio_group_set_gain(SFX, global.sfxvol, 0);
+ 
