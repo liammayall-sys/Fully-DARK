@@ -1,12 +1,17 @@
+draw_set_colour(c_blue);
 
+draw_set_halign(fa_left);
+draw_text_transformed(halfwidth+180, 190, string(round(mastervol*100)),2,2,0);
+draw_text_transformed(halfwidth+180, 310, string(round(musicvol*100)), 2,2,0);
+draw_text_transformed(halfwidth+180, 430, string(round(sfxvol*100)), 2,2,0);
 
 draw_set_halign(fa_center);
-draw_set_colour(c_blue);
-draw_text_transformed(halfwidth, 20, "Settings", 4,4,0);
 
-draw_text_transformed(halfwidth, 120, "Master",2,2,0);
-draw_text_transformed(halfwidth, 230, "Music", 2,2,0);
-draw_text_transformed(halfwidth, 340, "SFX", 2,2,0);
+draw_text_transformed(halfwidth, 40, "Settings", 4,4,0);
+
+draw_text_transformed(halfwidth, 130, "Master",2,2,0);
+draw_text_transformed(halfwidth, 240, "Music", 2,2,0);
+draw_text_transformed(halfwidth, 360, "SFX", 2,2,0);
 
 draw_line_width(halfwidth -150,190,halfwidth+150,190,2);
 draw_line_width(halfwidth -150,310,halfwidth+150,310,2);
