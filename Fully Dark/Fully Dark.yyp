@@ -45,6 +45,7 @@
     {"id":{"name":"buttonObject","path":"objects/buttonObject/buttonObject.yy",},},
     {"id":{"name":"followerObject","path":"objects/followerObject/followerObject.yy",},},
     {"id":{"name":"MainMenuParams","path":"objects/MainMenuParams/MainMenuParams.yy",},},
+    {"id":{"name":"menuBackgroundObject","path":"objects/menuBackgroundObject/menuBackgroundObject.yy",},},
     {"id":{"name":"playerControllerObject","path":"objects/playerControllerObject/playerControllerObject.yy",},},
     {"id":{"name":"playerObject","path":"objects/playerObject/playerObject.yy",},},
     {"id":{"name":"SoundSliders","path":"objects/SoundSliders/SoundSliders.yy",},},

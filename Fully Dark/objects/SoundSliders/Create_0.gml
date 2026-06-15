@@ -9,6 +9,8 @@ function initialise(keyupI, keydownI, keyleftI, keyrightI, upperOffsetI, verOffs
     horTextOffset = horTextOffsetI;
 }
 
+BGAsset = menuBackgroundObject;
+
 initialise(false, false, false, false, 100, 100, 150, 30);
 halfwidth = display_get_gui_width() / 2;
 
@@ -23,3 +25,12 @@ global.sfxvol = 1;
 
 audio_group_load(Music);
 audio_group_load(SFX);
+
+function settingsCheck() {
+    if ((global.mainMenuCheck = 0) and (object_exists(menuBackgroundObject))) {
+        menuBackgroundObject.menuBGInvisible(); 
+    }
+    else {
+        menuBackgroundObject.menuBGVisible();
+    }
+}
