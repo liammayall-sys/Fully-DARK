@@ -59,6 +59,7 @@
     {"id":{"name":"casterSprite","path":"sprites/casterSprite/casterSprite.yy",},},
     {"id":{"name":"GrassTile","path":"sprites/GrassTile/GrassTile.yy",},},
     {"id":{"name":"heleneSprite","path":"sprites/heleneSprite/heleneSprite.yy",},},
+    {"id":{"name":"menuBackground","path":"sprites/menuBackground/menuBackground.yy",},},
     {"id":{"name":"miraSprite","path":"sprites/miraSprite/miraSprite.yy",},},
     {"id":{"name":"MuckshoreTilesetSprite","path":"sprites/MuckshoreTilesetSprite/MuckshoreTilesetSprite.yy",},},
     {"id":{"name":"MurkyWaterSprite","path":"sprites/MurkyWaterSprite/MurkyWaterSprite.yy",},},

@@ -1,11 +1,18 @@
-keyup = false;
-keydown =false;
-keyleft = false;
-keyright = false;
+function initialise(keyupI, keydownI, keyleftI, keyrightI, upperOffsetI, verOffsetI, horOffsetI, horTextOffsetI) {
+    keyup = keyupI;
+    keydown = keydownI;
+    keyleft = keyleftI;
+    keyright = keyrightI;
+    upperOffset = upperOffsetI;
+    horOffset = horOffsetI;
+    verOffset = verOffsetI;
+    horTextOffset = horTextOffsetI;
+}
 
+initialise(false, false, false, false, 100, 100, 150, 30);
 halfwidth = display_get_gui_width() / 2;
 
-pos =0;
+pos = 0;
 
 mastervol = 1;
 musicvol = 1;

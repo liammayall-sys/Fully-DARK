@@ -13,42 +13,7 @@ if (menuID ==3){
                 break
         }
 }
-if (menuID == 2) {
-    switch (buttonID) { 
-        case 0: //Caster The Skeleton
-            tickChange(fullParty);
-            initialiseTickbox(tickX, tickY, fullParty, spacing);
-            break 
-        case 1: //Samaroth Svaeda
-            tickChange(fullParty);
-            initialiseTickbox(tickX, tickY, fullParty, spacing);
-            break 
-        case 2: //Astred Houlstrom
-            tickChange(fullParty);
-            initialiseTickbox(tickX, tickY, fullParty, spacing);
-            break 
-        case 3: //Breezy Bill Jenkins
-            tickChange(fullParty);
-            initialiseTickbox(tickX, tickY, fullParty, spacing);
-            break 
-        case 4: //Alessandra Agosto
-            tickChange(fullParty);
-            initialiseTickbox(tickX, tickY, fullParty, spacing);
-            break 
-        case 5: //Helene
-            tickChange(fullParty);
-            initialiseTickbox(tickX, tickY, fullParty, spacing);
-            break 
-        case 6: //Mira
-            tickChange(fullParty);
-            initialiseTickbox(tickX, tickY, fullParty, spacing);
-            break 
-        case 7: //Back Button
-            layer_set_visible("partySettingsUI", false);
-            layer_set_visible("pauseMenuUI", true);
-            break
-    }
-}
+
 if (menuID == 1) { //Main menu
     switch (buttonID) { 
         case 2: //Quit Game
@@ -75,7 +40,6 @@ if (menuID == 0) { //Pause Menu
         case 2: //Party
             layer_set_visible("pauseMenuUI", false);
             layer_set_visible("partySettingsUI", true);
-            initialiseTickbox(1247, 19, 7, 105);
             break 
         case 1: //Settings
             global.mainMenuCheck = 1;
