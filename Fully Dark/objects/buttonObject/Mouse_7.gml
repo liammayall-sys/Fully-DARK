@@ -48,7 +48,7 @@ if (menuID == 0) { //Pause Menu
             break 
         case 0: //Resume
             layer_set_visible("pauseMenuUI", false);
-            playerControllerObject.canBePaused = true;
+            global.canBePaused = true;
             break
     }
 }

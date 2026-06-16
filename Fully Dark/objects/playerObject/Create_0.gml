@@ -8,9 +8,9 @@ Caster = 0;
 Sam = 0;
 Astred = 0;
 Bill = 0;
-Sandra = 0;
+Sable = 0;
 Helene = 1;
-Mira = 1;
+Jiya = 1;
 
 for(var i = arraySize-1; i >= 0; i--) {
     pos_x[i] = x;
@@ -21,10 +21,10 @@ statsArray = [
     ["Caster The Skeleton", 80, 120, Caster, casterSprite],
     ["Samaroth Svaeda", 140, 100, Sam, samSprite],
     ["Astred Houlstrom", 100, 100, Astred, astredSprite],
-    ["Breezy Bill Jenkins", 80, 120, Bill, billSprite],
-    ["Alessandra Agosto", 120, 80, Sandra, sandraSprite],
+    ["\"Breezy\" Bill Jenkins", 80, 120, Bill, billSprite],
+    ["Alisabelle Agosto", 120, 80, Sable, sandraSprite],
     ["Helene", 150, 100, Helene, heleneSprite],
-    ["Mira", 90, 110, Mira, miraSprite]
+    ["Jiya Eversworn", 90, 110, Jiya, miraSprite]
 ]
 
 function setParty(stats) {
@@ -42,4 +42,3 @@ function setParty(stats) {
         party = 0;
     }
 }
-
