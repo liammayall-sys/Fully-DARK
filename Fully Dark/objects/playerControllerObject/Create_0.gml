@@ -1,1 +1,1 @@
-canBePaused = true;
+global.canBePaused = true;
