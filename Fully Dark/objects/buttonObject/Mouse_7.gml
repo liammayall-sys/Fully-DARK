@@ -1,55 +1,24 @@
 image_index = 0;
-if (menuID ==3){ //Audio Settings
-        switch (buttonID) {
-        	case 0: //Back Button
-                if (global.mainMenuCheck == false){
-                    layer_set_visible("pauseMenuUI", true);
-                    layer_set_visible("Settings", false);
-                }
-                if (global.mainMenuCheck == true){
-                    layer_set_visible("mainMenuUI", true);
-                    layer_set_visible("Settings", false);
-                }
-                break
-        }
+if (buttonType = "transition") {
+    transitionButton(menuFrom, menuTo);
 }
 
-if (menuID == 1) { //Main menu
-    switch (buttonID) { 
-        case 2: //Quit Game
-            game_end()
-            break 
-        case 1: //Settings
-            layer_set_visible("mainMenuUI", false);
-            layer_set_visible("Settings", true);
-            global.mainMenuCheck = true;
-            break 
-        case 0: //New Game
-            room_goto(Muckshore);
-            audio_sound_gain(MainTitleGR, 0, 1000);
-            break
-    }
-} 
-if (menuID == 0) { //Pause Menu
-    switch (buttonID) { 
-        case 4: //Main menu
-            room_goto(MainMenu);
-            break 
-        case 3: //Calendar
-            break 
-        case 2: //Party
-            layer_set_visible("pauseMenuUI", false);
-            layer_set_visible("partySettingsUI", true);
-            break 
-        case 1: //Settings
-            global.mainMenuCheck = false;
-            layer_set_visible("pauseMenuUI", false);
-            layer_set_visible("Settings", true);
-            break 
-        case 0: //Resume
-            layer_set_visible("pauseMenuUI", false);
-            global.canBePaused = true;
-            break
-    }
+if (buttonType = "quit") {
+    quitGame();
+}
+if (buttonType = "newGame") {
+    newGame();
+}
+if (buttonType = "unpause") {
+    unpauseGame(menuFrom);
+}
+if (buttonType = "mainTransition") {
+    mainTransition(menuFrom, menuTo);
 }
 
+if (buttonType = "tickBox") {
+    
+}
+if (buttonType = "quitToMenu") {
+    quitToMenu(menuFrom);
+}
