@@ -17,3 +17,4 @@ function toggleVisbility() {
         image_index = 0;
     }
 }
+
