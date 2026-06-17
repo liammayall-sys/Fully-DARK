@@ -9,7 +9,7 @@ Sam = 0;
 Astred = 0;
 Bill = 0;
 Sable = 0;
-Helene = 1;
+Hazel = 1;
 Jiya = 1;
 
 for(var i = arraySize-1; i >= 0; i--) {
@@ -21,9 +21,9 @@ statsArray = [
     ["Caster The Skeleton", 80, 120, Caster, casterSprite],
     ["Samaroth Svaeda", 140, 100, Sam, samSprite],
     ["Astred Houlstrom", 100, 100, Astred, astredSprite],
-    ["\"Breezy\" Bill Jenkins", 80, 120, Bill, billSprite],
+    ["\"Breezy\" Bill Skyler", 80, 120, Bill, billSprite],
     ["Alisabelle Agosto", 120, 80, Sable, sandraSprite],
-    ["Helene", 150, 100, Helene, heleneSprite],
+    ["Hazel Thorncroft", 150, 100, Hazel, heleneSprite],
     ["Jiya Eversworn", 90, 110, Jiya, miraSprite]
 ]
 
