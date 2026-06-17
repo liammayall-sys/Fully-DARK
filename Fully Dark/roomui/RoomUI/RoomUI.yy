@@ -161,7 +161,7 @@
               ],"flexDirection":0,"gapRow":32.0,"height":{"unit":2,"value":85.84,},"justifyContent":1,"name":"mainButtons","nodeColour":4282970753,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},
             {"$GMRInstance":"v4","%Name":"inst_7D8D9F96","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7D8D9F96","objectId":{"name":"menuBackgroundObject","path":"objects/menuBackgroundObject/menuBackgroundObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
           ],"flexDirection":0,"height":{"unit":2,"value":90.0,},"justifyContent":1,"name":"FlexPanel_1","nodeColour":4282965746,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":90.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"pauseMenuUI","nodeColour":4294070344,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"pauseMenuUI","nodeColour":4294070344,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
   ],
   "locked":false,
   "name":"RoomUI",
