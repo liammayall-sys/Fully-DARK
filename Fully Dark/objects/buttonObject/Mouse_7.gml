@@ -1,12 +1,12 @@
 image_index = 0;
-if (menuID ==3){
+if (menuID ==3){ //Audio Settings
         switch (buttonID) {
-        	case 0: //Audio Settings
-                if (global.mainMenuCheck == 1){
+        	case 0: //Back Button
+                if (global.mainMenuCheck == false){
                     layer_set_visible("pauseMenuUI", true);
                     layer_set_visible("Settings", false);
                 }
-                if (global.mainMenuCheck == 0){
+                if (global.mainMenuCheck == true){
                     layer_set_visible("mainMenuUI", true);
                     layer_set_visible("Settings", false);
                 }
@@ -22,7 +22,7 @@ if (menuID == 1) { //Main menu
         case 1: //Settings
             layer_set_visible("mainMenuUI", false);
             layer_set_visible("Settings", true);
-            global.mainMenuCheck = 0;
+            global.mainMenuCheck = true;
             break 
         case 0: //New Game
             room_goto(Muckshore);
@@ -42,7 +42,7 @@ if (menuID == 0) { //Pause Menu
             layer_set_visible("partySettingsUI", true);
             break 
         case 1: //Settings
-            global.mainMenuCheck = 1;
+            global.mainMenuCheck = false;
             layer_set_visible("pauseMenuUI", false);
             layer_set_visible("Settings", true);
             break 
@@ -52,3 +52,4 @@ if (menuID == 0) { //Pause Menu
             break
     }
 }
+

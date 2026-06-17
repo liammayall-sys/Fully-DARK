@@ -27,7 +27,7 @@ audio_group_load(Music);
 audio_group_load(SFX);
 
 function settingsCheck() {
-    if ((global.mainMenuCheck = 0) and (object_exists(menuBackgroundObject))) {
+    if ((global.mainMenuCheck = true) and (object_exists(menuBackgroundObject))) {
         menuBackgroundObject.menuBGInvisible(); 
     }
     else {

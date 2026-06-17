@@ -7,4 +7,17 @@ fullParty = 7;
 spacing = 105;
 currentParty = 0;
 
-global.mainMenuCheck = 0; 
+global.mainMenuCheck = true;
+
+function transitionButton(menuFrom, menuTo, mainmenu) {
+    layer_set_visible(menuFrom, false);
+    layer_set_visible(menuTo, true);
+    if (mainmenu = true) {
+        if (global.mainMenuCheck = true) {
+            global.mainMenuCheck = false;
+        }
+        else {
+            global.mainMenuCheck = true;
+        }
+    }
+}

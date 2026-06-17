@@ -17,3 +17,8 @@ function toggleVisbility() {
         image_index = 0;
     }
 }
+if object_exists(SoundSliders) {
+    SoundSliders.settingsCheck();
+}
+else {
+}
