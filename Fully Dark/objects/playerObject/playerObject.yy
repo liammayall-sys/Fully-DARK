@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Ramattra",
-    "path":"sprites/Ramattra/Ramattra.yy",
+    "name":"casterSprite",
+    "path":"sprites/casterSprite/casterSprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,
