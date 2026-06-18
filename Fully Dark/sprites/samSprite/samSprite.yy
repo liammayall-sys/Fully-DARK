@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Party Sprites",
-    "path":"folders/Rooms/Muckshore/Sprites/Party Sprites.yy",
+    "path":"folders/Global/Sprites/Party Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

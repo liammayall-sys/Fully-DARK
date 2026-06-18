@@ -46,8 +46,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Global/Sprites.yy",
+    "name":"uiSprites",
+    "path":"folders/Global/Sprites/uiSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
