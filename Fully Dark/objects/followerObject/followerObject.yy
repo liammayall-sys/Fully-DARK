@@ -9,8 +9,8 @@
   "name":"followerObject",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Rooms/Muckshore/Objects.yy",
+    "name":"playerObjects",
+    "path":"folders/Global/Objects/playerObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

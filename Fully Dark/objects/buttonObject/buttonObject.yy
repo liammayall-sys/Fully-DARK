@@ -12,8 +12,8 @@
   "name":"buttonObject",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Global/Objects.yy",
+    "name":"uiObjects",
+    "path":"folders/Global/Objects/uiObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -42,3 +42,12 @@ function setParty(stats) {
         party = 0;
     }
 }
+
+function collisionCheck() {
+    if (place_meeting(x, y, intObject) = true) {
+        var inst = instance_place(x, y, intObject);
+        with inst {
+            intObject.interaction();
+        }
+    }
+}
