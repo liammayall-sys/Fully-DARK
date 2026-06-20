@@ -1,4 +1,4 @@
-image_index = 0;
+image_index = 0 + frameIndex;
 if (buttonType = "transition") {
     transitionButton(menuFrom, menuTo);
 }
