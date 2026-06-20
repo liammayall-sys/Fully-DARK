@@ -5,5 +5,6 @@ layer_set_visible("mainMenuUI", true);
 layer_set_visible("pauseMenuUI", false);
 layer_set_visible("settingsUI", false);
 layer_set_visible("partySettingsUI", false);
+layer_set_visible("partyStatsUI", false);
 global.mainMenuCheck = true;
 alarm[0] = game_get_speed(gamespeed_fps)/2;

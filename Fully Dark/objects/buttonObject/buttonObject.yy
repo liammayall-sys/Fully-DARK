@@ -33,6 +33,7 @@
     {"$GMObjectProperty":"v2","%Name":"menuFrom","filters":[],"listItems":[],"multiselect":false,"name":"menuFrom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"menuTo","filters":[],"listItems":[],"multiselect":false,"name":"menuTo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"buttonType","filters":[],"listItems":[],"multiselect":false,"name":"buttonType","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"transition","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"frameIndex","filters":[],"listItems":[],"multiselect":false,"name":"frameIndex","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
