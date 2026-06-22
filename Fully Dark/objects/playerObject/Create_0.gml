@@ -3,14 +3,14 @@ tilemap = layer_tilemap_get_id("tilesWalls");
 followerDistance = 16;
 arraySize = 128;
 followersOn = true;
-party = 0;
-Caster = 0;
-Sam = 0;
-Astred = 0;
-Bill = 0;
-Sable = 0;
-Hazel = 1;
-Jiya = 1;
+party = false;
+Caster = false;
+Sam = false;
+Astred = false;
+Bill = false;
+Sable = false;
+Hazel = false;
+Jiya = true;
 
 for(var i = arraySize-1; i >= 0; i--) {
     pos_x[i] = x;
