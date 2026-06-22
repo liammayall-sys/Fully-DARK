@@ -1,4 +1,4 @@
-function initialise(keyupI, keydownI, keyleftI, keyrightI, upperOffsetI, verOffsetI, horOffsetI, horTextOffsetI, textFontI) {
+function initialise(keyupI, keydownI, keyleftI, keyrightI, upperOffsetI, verOffsetI, horOffsetI, horTextOffsetI, textFontI, titleScaleI, headingScaleI) {
     keyup = keyupI;
     keydown = keydownI;
     keyleft = keyleftI;
@@ -7,12 +7,14 @@ function initialise(keyupI, keydownI, keyleftI, keyrightI, upperOffsetI, verOffs
     horOffset = horOffsetI;
     verOffset = verOffsetI;
     horTextOffset = horTextOffsetI;
+    titleScale = titleScaleI;
+    headingScale = headingScaleI;
     draw_set_font(textFontI);
 }
 
 BGAsset = menuBackgroundObject;
 
-initialise(false, false, false, false, 100, 100, 150, 30, goodFont);
+initialise(false, false, false, false, 100, 100, 150, 30, PIXY, 2, 1);
 halfwidth = display_get_gui_width() / 2;
 
 pos = 0;
