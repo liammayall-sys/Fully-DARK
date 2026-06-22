@@ -39,7 +39,9 @@
     {"$GMFolder":"","%Name":"Tiles","folderPath":"folders/Rooms/Muckshore/Sprites/Tiles.yy","name":"Tiles","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tiles","folderPath":"folders/Rooms/Muckshore/Tiles.yy","name":"Tiles","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
+  ],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -48,9 +50,9 @@
   },
   "name":"Fully Dark",
   "resources":[
-    {"id":{"name":"goodFont_1","path":"fonts/goodFont_1/goodFont_1.yy",},},
     {"id":{"name":"goodFont","path":"fonts/goodFont/goodFont.yy",},},
-    {"id":{"name":"pooFont","path":"fonts/pooFont/pooFont.yy",},},
+    {"id":{"name":"Junicode","path":"fonts/Junicode/Junicode.yy",},},
+    {"id":{"name":"PIXY","path":"fonts/PIXY/PIXY.yy",},},
     {"id":{"name":"buttonObject","path":"objects/buttonObject/buttonObject.yy",},},
     {"id":{"name":"followerObject","path":"objects/followerObject/followerObject.yy",},},
     {"id":{"name":"intObject","path":"objects/intObject/intObject.yy",},},
