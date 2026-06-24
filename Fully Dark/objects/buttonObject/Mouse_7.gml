@@ -22,3 +22,7 @@ if (buttonType = "tickBox") {
 if (buttonType = "quitToMenu") {
     quitToMenu(menuFrom);
 }
+
+if (buttonType = "partySwitch" and frameIndex >= 6) {
+    party = "left";
+}
