@@ -1,6 +1,9 @@
 function transitionButton(menuFromI, menuToI) { 
     layer_set_visible(menuFromI, false);
     layer_set_visible(menuToI, true);
+    if (menuToI = "partySettingsUI") {
+        getTextID();
+    }
 }
 
 function quitGame() {
@@ -32,4 +35,14 @@ function quitToMenu(menuFromI) {
     layer_set_visible(menuFromI, false);
     room_goto(MainMenu);
     layer_set_visible("MainMenuUI", true);
+}
+
+function getTextID() {
+    textPanel = flexpanel_node_get_child(, "titleText");
+    textStruct = flexpanel_node_get_struct(textPanel);
+    textId = textStruct.layerElements[0].elementId;
+    return textId;
+}
+function switchPartyStart(direction) {
+    layer_text_text(getTextID(), playerObject.statsArray[0, 0])
 }
