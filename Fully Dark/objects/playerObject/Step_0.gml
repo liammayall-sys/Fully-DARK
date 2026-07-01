@@ -11,3 +11,7 @@ if (x != xprevious or y != yprevious) {
     pos_x[0] = x;
     pos_y[0] = y;
 }
+
+if (y != yprevious) {
+    depth = -y;
+}
