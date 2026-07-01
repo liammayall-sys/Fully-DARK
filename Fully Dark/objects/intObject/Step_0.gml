@@ -1,3 +1,1 @@
-if (y != yprevious) {
-    depth = -y;
-}
+depthCorrection();

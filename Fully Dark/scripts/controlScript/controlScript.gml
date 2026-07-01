@@ -46,3 +46,9 @@ function getTextID() {
 function switchPartyStart(direction) {
     layer_text_text(getTextID(), playerObject.statsArray[0, 0])
 }
+
+function depthCorrection() {
+    if (y != yprevious) {
+        depth = -y;
+}
+}
