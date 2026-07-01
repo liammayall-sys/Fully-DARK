@@ -4,28 +4,14 @@ followerDistance = 16;
 arraySize = 128;
 followersOn = true;
 party = false;
-Caster = false;
-Sam = false;
-Astred = false;
-Bill = false;
-Sable = false;
-Hazel = false;
-Jiya = true;
+
 
 for(var i = arraySize-1; i >= 0; i--) {
     pos_x[i] = x;
     pos_y[i] = y;
 }
 
-statsArray = [
-    ["Caster The Skeleton", 80, 120, Caster, casterSprite],
-    ["Samaroth Svaeda", 140, 100, Sam, samSprite],
-    ["Astred Houlstrom", 100, 100, Astred, astredSprite],
-    ["\"Breezy\" Bill Skyler", 80, 120, Bill, billSprite],
-    ["Alisabelle Agosto", 120, 80, Sable, sandraSprite],
-    ["Hazel Thorncroft", 150, 100, Hazel, heleneSprite],
-    ["Jiya Eversworn", 90, 110, Jiya, miraSprite]
-]
+
 
 function setParty(stats) {
     if (followersOn == true) {
