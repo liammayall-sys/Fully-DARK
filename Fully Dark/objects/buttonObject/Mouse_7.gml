@@ -2,7 +2,8 @@ image_index = 0 + frameIndex;
 if (buttonType = "transition") {
     transitionButton(menuFrom, menuTo);
     if (menuTo = "partyStatsUI") {
-        initialisePartyStats(statsIndex);
+        initialisePartyStats(statsIndex, "partyStatsUI", "titleText");
+        global.currentIndex = statsIndex;
     }
 }
 
@@ -26,10 +27,16 @@ if (buttonType = "quitToMenu") {
     quitToMenu(menuFrom);
 }
 
-if (buttonType = "partySwitch" and frameIndex >= 6) {
-    switchPartyStats(1); //going forward
+if (buttonType = "partySwitch" and frameIndex = 6) {
+    if (global.currentIndex == 6) {
+        global.currentIndex = -1;
+    }
+    switchPartyStats(true, global.currentIndex, "partyStatsUI", "titleText"); //going forward
 }
 
-if (buttonType = "partySwitch" and frameIndex <= 5) {
-    switchPartyStats(-1); //going backwards
+if (buttonType = "partySwitch" and frameIndex = 3) {
+    if (global.currentIndex == 0) {
+        global.currentIndex = 7;
+    }
+    switchPartyStats(false, global.currentIndex, "partyStatsUI", "titleText"); //going backwards
 }

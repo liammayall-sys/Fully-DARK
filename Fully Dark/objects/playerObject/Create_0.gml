@@ -11,8 +11,6 @@ for(var i = arraySize-1; i >= 0; i--) {
     pos_y[i] = y;
 }
 
-
-
 function setParty(stats) {
     if (followersOn == true) {
         instance_destroy(followerObject);
