@@ -7,4 +7,6 @@ layer_set_visible("settingsUI", false);
 layer_set_visible("partySettingsUI", false);
 layer_set_visible("partyStatsUI", false);
 global.mainMenuCheck = true;
+global.musicvol = 1;
+global.sfxvol = 1;
 alarm[0] = game_get_speed(gamespeed_fps)/2;
