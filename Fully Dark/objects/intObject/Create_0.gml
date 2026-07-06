@@ -1,10 +1,6 @@
 function interaction() {
-    if sprite_index = rockSprite {
-        sprite_index = Ramattra;
-    }
-    else {
-        sprite_index = rockSprite;
-    }
+    layer_set_visible("textBoxUI", true);
+    
 }
 
 if (objectType = "rock") {

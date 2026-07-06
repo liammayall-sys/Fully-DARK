@@ -21,10 +21,9 @@ sciptArray = [
     ["Hello Jeff", "Wolt"]
 ]
 
-function transitionButton(menuFromI, menuToI) { 
+function transitionButton(menuFromI, menuToI) {
     layer_set_visible(menuFromI, false);
     layer_set_visible(menuToI, true);
-    
 }
 
 function quitGame() {
@@ -66,28 +65,38 @@ function getTextID(layer, textNode) {
     return textId;
 }
 
+function getSpriteID(layer, sprite) {
+    uiLayer = layer_get_flexpanel_node(layer);
+    spriteId = layer_sprite_get_id(uiLayer, sprite);
+}
+
 function depthCorrection() {
     if (y != yprevious) {
         depth = -y;
     }
 }
 
-function initialisePartyStats(partyIndex, uiLayer, textNode) {
-    characterName = (global.statsArray[partyIndex, 0]);
+function initialiseTextChange(partyIndex, uiLayer, textNode, array, arrayNumber) {
+    characterName = (array[partyIndex, arrayNumber]);
     layer_text_text(getTextID(uiLayer, textNode), characterName);
 }
 
-function switchPartyStats(direction, index, uiLayer, textNode) {
+function switchTextFromArray(direction, index, uiLayer, textNode, array, arrayNumber, single) {
     if (direction = true) {
-        layer_text_text(getTextID(uiLayer, textNode), global.statsArray[index + 1, 0])
-        global.currentIndex = index + 1;
+        layer_text_text(getTextID(uiLayer, textNode), string(array[index + 1, arrayNumber]))
+        if (single = true) {
+            global.currentIndex = index + 1;
+        }
     }
-    
     if (direction = false) {
-        layer_text_text(getTextID(uiLayer, textNode), global.statsArray[index - 1, 0])
-        global.currentIndex = index - 1;
+        layer_text_text(getTextID(uiLayer, textNode), array[index - 1, arrayNumber])
+        if (single = true) {
+            global.currentIndex = index - 1;
+        }
+        
     }
 }
+
 
 function changeMusic(oldMusic, newMusic, oldMusicOn) {
     if (oldMusicOn = true) {
