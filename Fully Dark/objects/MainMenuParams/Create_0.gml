@@ -6,6 +6,7 @@ layer_set_visible("pauseMenuUI", false);
 layer_set_visible("settingsUI", false);
 layer_set_visible("partySettingsUI", false);
 layer_set_visible("partyStatsUI", false);
+layer_set_visible("textBoxUI", false);
 global.mainMenuCheck = true;
 global.musicvol = 1;
 global.sfxvol = 1;
