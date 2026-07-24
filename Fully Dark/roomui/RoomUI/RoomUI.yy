@@ -3,7 +3,11 @@
   "%Name":"RoomUI",
   "children":[
     {"$GMRUILayer":"v1","%Name":"textBoxUI","alignItems":2,"children":[
-        {"$GMRFlexPanel":"","%Name":"textBorder","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"textBorder","alignItems":1,"children":[
+            {"$GMRFlexPanel":"","%Name":"nameBox","alignItems":2,"children":[
+                {"$GMRTextItem":"v3","%Name":"text_4FCEA6ED","alignment":1,"charSpacing":0.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":4,"resourceType":"InstanceFlexProps",},"fontId":{"name":"Junicode","path":"fonts/Junicode/Junicode.yy",},"frameH":0.0,"frameW":0.0,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"lineSpacing":0.0,"name":"text_4FCEA6ED","origin":4,"paragraphSpacing":0.0,"resourceType":"GMRTextItem","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"text":"Default Name","wrap":false,"x":0.0,"y":0.0,},
+                {"$GMRSpriteGraphic":"v1","%Name":"graphic_2F6CE5FA","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_2F6CE5FA","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"menuBackground","path":"sprites/menuBackground/menuBackground.yy",},"x":0.0,"y":0.0,},
+              ],"flexDirection":0,"height":{"unit":2,"value":15.0,},"justifyContent":1,"name":"nameBox","nodeColour":4294104392,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":30.0,},},
             {"$GMRFlexPanel":"","%Name":"textBackground","alignItems":2,"children":[
                 {"$GMRFlexPanel":"","%Name":"textBox","alignItems":2,"children":[
                     {"$GMRTextItem":"v3","%Name":"text_257072F8","alignment":1,"charSpacing":0.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"fontId":{"name":"Junicode","path":"fonts/Junicode/Junicode.yy",},"frameH":0.0,"frameW":0.0,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"lineSpacing":0.0,"name":"text_257072F8","paragraphSpacing":0.0,"resourceType":"GMRTextItem","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"text":"Default Text","wrap":false,"x":0.0,"y":0.0,},
@@ -233,7 +237,7 @@
                   ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-90.0,"y":-37.0,},
               ],"flexDirection":0,"height":{"unit":1,"value":83.0,},"justifyContent":1,"name":"backButton","nodeColour":4289874162,"positionBottom":{"unit":2,"value":4.33526,},"positionLeft":{"unit":2,"value":2.601626,},"positionType":2,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":180.0,},},
           ],"flexDirection":0,"height":{"unit":2,"value":90.0,},"justifyContent":1,"name":"Panel","nodeColour":4282970732,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":90.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"controlsUI","nodeColour":4282943730,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"controlsUI","nodeColour":4282943730,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"mainMenuUI","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"Title","alignItems":2,"children":[
             {"$GMRTextItem":"v3","%Name":"text_6EE40684","alignment":0,"charSpacing":0.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"fontId":{"name":"PIXY","path":"fonts/PIXY/PIXY.yy",},"frameH":0.0,"frameW":0.0,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"lineSpacing":0.0,"name":"text_6EE40684","paragraphSpacing":0.0,"resourceType":"GMRTextItem","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":3.0,"text":"FULLY DARK","wrap":false,"x":-0.5,"y":166.0,},

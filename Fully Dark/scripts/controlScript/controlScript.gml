@@ -16,10 +16,7 @@ statsArray = [
     ["Sable Agosto", 120, 80, Sable, sandraSprite]
 ]
 
-sciptArray = [
-    ["My name is Jeff", "Jeff"],
-    ["Hello Jeff", "Wolt"]
-]
+
 
 function transitionButton(menuFromI, menuToI) {
     layer_set_visible(menuFromI, false);
@@ -76,8 +73,8 @@ function depthCorrection() {
     }
 }
 
-function initialiseTextChange(partyIndex, uiLayer, textNode, array, arrayNumber) {
-    characterName = (array[partyIndex, arrayNumber]);
+function initialiseTextChange(index, uiLayer, textNode, array, arrayNumber) {
+    characterName = (array[index, arrayNumber]);
     layer_text_text(getTextID(uiLayer, textNode), characterName);
 }
 
@@ -89,14 +86,13 @@ function switchTextFromArray(direction, index, uiLayer, textNode, array, arrayNu
         }
     }
     if (direction = false) {
-        layer_text_text(getTextID(uiLayer, textNode), array[index - 1, arrayNumber])
+        layer_text_text(getTextID(uiLayer, textNode), string(array[index - 1, arrayNumber]))
         if (single = true) {
             global.currentIndex = index - 1;
         }
         
     }
 }
-
 
 function changeMusic(oldMusic, newMusic, oldMusicOn) {
     if (oldMusicOn = true) {
