@@ -1,7 +1,10 @@
-var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+if (global.canBePaused = true) {
+    var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+    var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
-move_and_collide(_hor * moveSpeed, _ver * moveSpeed, tilemap);
+    move_and_collide(_hor * moveSpeed, _ver * moveSpeed, tilemap);
+}
+
 
 if (x != xprevious or y != yprevious) {
     for(var i = arraySize-1; i > 0; i--) {

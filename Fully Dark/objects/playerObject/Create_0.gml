@@ -31,7 +31,19 @@ function collisionCheck() {
     if (place_meeting(x, y, intObject) = true) {
         var inst = instance_place(x, y, intObject);
         with inst {
-            intObject.interaction();
-        }
+            intObject.interaction(eventType);
+        }   
+    }
+}
+
+function switchTextBox() {
+    if (global.scriptArray[(global.currentIndex + 1), 0] = "scene end") {
+        layer_set_visible("textBoxUI", false);
+        global.canBePaused = true;
+        global.textBoxVisible = false;
+    }
+    else {
+        switchTextFromArray(true, global.currentIndex, "textBoxUI", "textBox", global.scriptArray, 0, false);
+        switchTextFromArray(true, global.currentIndex, "textBoxUI", "nameBox", global.scriptArray, 1, true);
     }
 }
