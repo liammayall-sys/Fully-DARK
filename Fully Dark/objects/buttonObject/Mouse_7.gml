@@ -14,10 +14,19 @@ if (buttonType = "quit") { //quit game button
 }
 if (buttonType = "newGame") { //new game button
     newGame();
+    if (menuTo = "saveFileUI") {
+        for (var i = 0; i < 3; i += 1) {
+            if (file_exists($"savedata{i}.txt") = true) {
+                layer_text_text(getTextID("saveFileUI", $"saveFile{i+1}"), $"savefile {i+1}");
+            }
+        }
+    }
 }
+
 if (buttonType = "unpause") { //any button that unpauses the game or turns off the menu
     unpauseGame(menuFrom);
 }
+
 if (buttonType = "mainTransition") { //any button going to the main menu
     mainTransition(menuFrom, menuTo);
 }
@@ -25,16 +34,14 @@ if (buttonType = "mainTransition") { //any button going to the main menu
 if (buttonType = "saveFile") { //button that is a save file
     saveDataLoad(statsIndex);
     transitionButton(menuFrom, menuTo);
-    
-    
 }
+
 if (buttonType = "quitToMenu") {
     quitToMenu(menuFrom);
 }
 
 if (buttonType = "gameStart") {
     transitionStart(Muckshore, fadeOutSequence, fadeInSequence);
-    
 }
 
 if (buttonType = "partySwitch" and frameIndex = 6) {

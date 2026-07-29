@@ -6,21 +6,15 @@ function saveDataLoad(savefileNumber) {
             y: 96,
             room: Muckshore
         }
-        var _string = json_stringify(_struct);
-        file_text_write_string(_file, _string);
-        file_text_close(_file);
+        global.saveStruct = jsonReadWrite(false, _struct, _file);
         return false;
     }
     else {
         var _file = file_text_open_read($"savedata{savefileNumber}.txt");
-        var _json = file_text_read_string(_file);
-        var _struct = json_parse(_json);
-        file_text_close(_file);
+        jsonReadWrite(true, 0, _file);
         return true;
     }
 }
-
-
 
 function saveGame(savefileNumber, instance) {
     if (file_exists($"savedata{savefileNumber}.txt")) = false {
@@ -34,5 +28,19 @@ function saveGame(savefileNumber, instance) {
             var _string = json_stringify(_struct);
             file_text_write_string(_file, _string);
         }
+    }
+}
+
+function jsonReadWrite(read, struct, file) {
+    if (read) {
+        var _json = file_text_read_string(file);
+        struct = json_parse(_json);
+        file_text_close(file);
+        return struct;
+    }
+    else {
+        var _string = json_stringify(struct);
+        file_text_write_string(file, _string);
+        file_text_close(file);
     }
 }
