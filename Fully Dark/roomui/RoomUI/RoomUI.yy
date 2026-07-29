@@ -23,7 +23,7 @@
                   ],"flexDirection":0,"height":{"unit":1,"value":100.0,},"justifyContent":1,"marginBottom":{"unit":1,"value":20.0,},"marginLeft":{"unit":1,"value":20.0,},"marginRight":{"unit":1,"value":20.0,},"marginTop":{"unit":1,"value":20.0,},"name":"noPanel","nodeColour":4282970727,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":30.0,},},
               ],"flexDirection":2,"height":{"unit":2,"value":40.0,},"justifyContent":1,"name":"optionsPanel","nodeColour":4290703944,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":60.0,},},
           ],"flexDirection":0,"height":{"unit":2,"value":60.0,},"justifyContent":1,"name":"fullPanel","nodeColour":4294086984,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":60.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"startGameUI","nodeColour":4284500210,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"startGameUI","nodeColour":4284500210,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"saveFileUI","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"saveFiles","alignItems":2,"children":[
             {"$GMRFlexPanel":"","%Name":"saveTitle","alignItems":2,"children":[
@@ -304,6 +304,7 @@
                 {"$GMRInstance":"v4","%Name":"inst_22D6BC7F","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_22D6BC7F","objectId":{"name":"buttonObject","path":"objects/buttonObject/buttonObject.yy",},"properties":[
                     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"buttonObject","path":"objects/buttonObject/buttonObject.yy",},"propertyId":{"name":"buttonType","path":"objects/buttonObject/buttonObject.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"newGame",},
                     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"buttonObject","path":"objects/buttonObject/buttonObject.yy",},"propertyId":{"name":"menuFrom","path":"objects/buttonObject/buttonObject.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"mainMenuUI",},
+                    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"buttonObject","path":"objects/buttonObject/buttonObject.yy",},"propertyId":{"name":"menuTo","path":"objects/buttonObject/buttonObject.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"saveFileUI",},
                   ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
               ],"flexDirection":0,"height":{"unit":1,"value":83.0,},"justifyContent":1,"name":"newGameButton","nodeColour":4289874162,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":400.0,},},
             {"$GMRFlexPanel":"","%Name":"settingsButton","alignItems":2,"children":[

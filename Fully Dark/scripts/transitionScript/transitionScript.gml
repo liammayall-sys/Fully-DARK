@@ -43,4 +43,5 @@ function transitionDisableUI() {
     layer_set_visible("controlsUI", false);
     layer_set_visible("saveFileUI", false);
     layer_set_visible("startGameUI", false);
+    global.canBePaused = true;
 }
