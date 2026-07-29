@@ -6,15 +6,11 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_4442D0BD","path":"rooms/Muckshore/Muckshore.yy",},
-    {"name":"inst_5768A6A7","path":"rooms/Muckshore/Muckshore.yy",},
     {"name":"inst_5EF5846","path":"rooms/Muckshore/Muckshore.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_4442D0BD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4442D0BD","objectId":{"name":"playerControllerObject","path":"objects/playerControllerObject/playerControllerObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":32.0,},
-        {"$GMRInstance":"v4","%Name":"inst_5768A6A7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5768A6A7","objectId":{"name":"playerObject","path":"objects/playerObject/playerObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":96.0,},
         {"$GMRInstance":"v4","%Name":"inst_5EF5846","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5EF5846","objectId":{"name":"intObject","path":"objects/intObject/intObject.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"intObject","path":"objects/intObject/intObject.yy",},"propertyId":{"name":"objectType","path":"objects/intObject/intObject.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rock",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"intObject","path":"objects/intObject/intObject.yy",},"propertyId":{"name":"eventType","path":"objects/intObject/intObject.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
