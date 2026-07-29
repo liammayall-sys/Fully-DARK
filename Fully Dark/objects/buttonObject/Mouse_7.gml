@@ -22,31 +22,35 @@ if (buttonType = "mainTransition") { //any button going to the main menu
     mainTransition(menuFrom, menuTo);
 }
 
-if (buttonType = "tickBox") { //button that is a tickbox
+if (buttonType = "saveFile") { //button that is a save file
+    saveDataLoad(statsIndex);
+    transitionButton(menuFrom, menuTo);
+    
     
 }
 if (buttonType = "quitToMenu") {
     quitToMenu(menuFrom);
 }
 
+if (buttonType = "gameStart") {
+    transitionStart(Muckshore, fadeOutSequence, fadeInSequence);
+    
+}
+
 if (buttonType = "partySwitch" and frameIndex = 6) {
     if (global.currentIndex == 6) {
         global.currentIndex = -1;
     }
-    singleFunc = false;
-    switchTextFromArray(true, global.currentIndex, "partyStatsUI", "titleText", global.statsArray, 0, singleFunc); //going forward
-    switchTextFromArray(true, global.currentIndex, "partyStatsUI", "hpText", global.statsArray, 1, singleFunc);
-    switchTextFromArray(true, global.currentIndex, "partyStatsUI", "mpText", global.statsArray, 2, singleFunc);
-    global.currentIndex = global.currentIndex + 1;
+    switchTextFromArray(true, global.currentIndex, "partyStatsUI", "titleText", global.statsArray, 0, false); //going forward
+    switchTextFromArray(true, global.currentIndex, "partyStatsUI", "hpText", global.statsArray, 1, false);
+    switchTextFromArray(true, global.currentIndex, "partyStatsUI", "mpText", global.statsArray, 2, true);
 }
 
 if (buttonType = "partySwitch" and frameIndex = 3) {
     if (global.currentIndex == 0) {
         global.currentIndex = 7;
     }
-    singleFunc = false;
-    switchTextFromArray(false, global.currentIndex, "partyStatsUI", "titleText", global.statsArray, 0, singleFunc); //going backwards
-    switchTextFromArray(false, global.currentIndex, "partyStatsUI", "hpText", global.statsArray, 1, singleFunc);
-    switchTextFromArray(false, global.currentIndex, "partyStatsUI", "mpText", global.statsArray, 2, singleFunc);
-    global.currentIndex = global.currentIndex - 1;
+    switchTextFromArray(false, global.currentIndex, "partyStatsUI", "titleText", global.statsArray, 0, false); //going backwards
+    switchTextFromArray(false, global.currentIndex, "partyStatsUI", "hpText", global.statsArray, 1, false);
+    switchTextFromArray(false, global.currentIndex, "partyStatsUI", "mpText", global.statsArray, 2, true);
 }

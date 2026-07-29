@@ -1,11 +1,11 @@
 function interaction(eventType) {
-    if (eventType = 0) {
-        global.currentIndex = eventType;
+    if (eventType = "textBox") {
+        global.currentIndex = eventIndex;
         global.canBePaused = false;
         layer_set_visible("textBoxUI", true);
         global.textBoxVisible = true;
-        initialiseTextChange(0, "textBoxUI", "textBox", global.scriptArray, 0);
-        initialiseTextChange(0, "textBoxUI", "nameBox", global.scriptArray, 1);
+        initialiseTextChange(eventIndex, "textBoxUI", "textBox", global.scriptArray, 0);
+        initialiseTextChange(eventIndex, "textBoxUI", "nameBox", global.scriptArray, 1);
     }
 }
 

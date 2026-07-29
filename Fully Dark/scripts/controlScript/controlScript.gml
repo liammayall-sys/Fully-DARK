@@ -1,21 +1,22 @@
-Caster = false;
-Sam = false;
-Astred = false;
-Bill = false;
-Sable = false;
-Hazel = false;
-Jiya = false;
+function callStats() {
+    global.statsArray = [ 
+        ["Jiya Eversworn", 90, 110, miraSprite],
+        ["Hazel Thorncroft", 150, 100, heleneSprite],
+        ["Samaroth Svaeda", 140, 100, samSprite],
+        ["Caster The Skeleton", 80, 120, casterSprite],
+        ["\"Breezy\" Bill Skyler", 80, 120, billSprite],
+        ["Astred Houlstrom", 100, 100, astredSprite],
+        ["Sable Agosto", 120, 80, sandraSprite]
+    ]
+}
 
-statsArray = [
-    ["Jiya Eversworn", 90, 110, Jiya, miraSprite],
-    ["Hazel Thorncroft", 150, 100, Hazel, heleneSprite],
-    ["Samaroth Svaeda", 140, 100, Sam, samSprite],
-    ["Caster The Skeleton", 80, 120, Caster, casterSprite],
-    ["\"Breezy\" Bill Skyler", 80, 120, Bill, billSprite],
-    ["Astred Houlstrom", 100, 100, Astred, astredSprite],
-    ["Sable Agosto", 120, 80, Sable, sandraSprite]
-]
-
+function callScript() {
+    global.scriptArray = [
+        ["My name is Jeff", "Jeff"],
+        ["Hello Jeff", "Wolt" ],
+        ["scene end", "null"]
+    ]
+}
 
 
 function transitionButton(menuFromI, menuToI) {
@@ -33,9 +34,9 @@ function unpauseGame(menuFromI) {
 }
 
 function newGame() {
-    room_goto(Muckshore);
-    audio_sound_gain(MainTitleGR, 0, 1000);
     global.mainMenuCheck = false;
+    layer_set_visible("mainMenuUI", false);
+    layer_set_visible("saveFileUI", true);
 }
 
 function mainTransition(menuFromI, menuToI) {
@@ -48,6 +49,13 @@ function mainTransition(menuFromI, menuToI) {
     }
 }
 
+function spawnPlayer() {
+    var inst = instance_create_layer(128, 96, "Instances", playerObject);
+    with inst {
+        spawnFromLoad(128, 96);
+    }
+    
+}
 function quitToMenu(menuFromI) {
     layer_set_visible(menuFromI, false);
     room_goto(MainMenu);
