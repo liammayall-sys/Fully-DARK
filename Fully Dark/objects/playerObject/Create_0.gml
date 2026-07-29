@@ -35,7 +35,7 @@ function collisionCheck() {
         var inst = instance_place(x, y, intObject);
         with inst {
             intObject.interaction(eventType);
-        }   
+        } 
     }
 }
 
