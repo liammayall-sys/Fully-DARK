@@ -12,8 +12,10 @@ function callStats() {
 
 function callScript() {
     global.scriptArray = [
-        ["My name is Jeff", "Jeff"],
-        ["Hello Jeff", "Wolt" ],
+        ["Who is that hiding behind that rock?", "Caster The Skeleton"],
+        ["I'm coming to see you today Popola... I promise I'm coming...", "Guy going to see Popola?"],
+        ["My Name is Guy Hooskomin-tucipopola by the way", "Guy telling me his name"],
+        ["once I get out from behind this rock... Please go away...", "Guy Hooskomin-tucipopola"],
         ["scene end", "null"]
     ]
 }
