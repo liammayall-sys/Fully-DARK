@@ -21,6 +21,7 @@ function callScript() {
 function spawnPlayer() {
     var _inst = instance_create_layer(global.saveStruct.x, global.saveStruct.y, "Instances", playerObject);
     with _inst{
+        sprite_index = global.saveStruct.leader;
         x = global.saveStruct.x;
         y = global.saveStruct.y;
     }

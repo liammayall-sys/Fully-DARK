@@ -46,5 +46,5 @@ switch (pos)
         
             if (keyright) && (sfxvol<1) sfxvol+=0.01;
             if (keyleft) && (sfxvol>0) sfxvol-=0.01;
-        break;        
+        break;
 }
