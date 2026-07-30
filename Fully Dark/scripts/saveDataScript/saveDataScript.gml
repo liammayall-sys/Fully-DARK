@@ -3,7 +3,8 @@ function newGame(savefileNumber) {
     global.saveStruct = {
         x: 128,
         y: 96,
-        room: asset_get_index(Muckshore)
+        room: asset_get_index(Muckshore),
+        leader: casterSprite
     }
     jsonReadWrite(false, global.saveStruct, _file);
     return false;
@@ -14,7 +15,8 @@ function saveGame(savefileNumber) {
     var _struct = {
         x: global.currentPosX,
         y: global.currentPosY,
-        room: global.currentRoom
+        room: global.currentRoom,
+        leader: global.currentLeader
     }
     jsonReadWrite(false, _struct, _file);
 }

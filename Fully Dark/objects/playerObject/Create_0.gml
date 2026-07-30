@@ -3,10 +3,10 @@ tilemap = layer_tilemap_get_id("tilesWalls");
 followerDistance = 16;
 arraySize = 128;
 followersOn = true;
-party = false;
 x = 0;
 y = 0;
 global.currentRoom = asset_get_index(room_get_name(room));
+global.currentLeader = casterSprite;
 
 
 for(var i = arraySize-1; i >= 0; i--) {
