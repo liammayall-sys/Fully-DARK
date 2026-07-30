@@ -6,7 +6,7 @@ followersOn = true;
 party = false;
 x = 0;
 y = 0;
-global.currentRoom = room_get_name(room);
+global.currentRoom = asset_get_index(room_get_name(room));
 
 
 for(var i = arraySize-1; i >= 0; i--) {
@@ -37,21 +37,4 @@ function collisionCheck() {
             intObject.interaction(eventType);
         } 
     }
-}
-
-function switchTextBox() {
-    if (global.scriptArray[(global.currentIndex + 1), 0] = "scene end") {
-        layer_set_visible("textBoxUI", false);
-        global.canBePaused = true;
-        global.textBoxVisible = false;
-    }
-    else {
-        switchTextFromArray(true, global.currentIndex, "textBoxUI", "textBox", global.scriptArray, 0, false);
-        switchTextFromArray(true, global.currentIndex, "textBoxUI", "nameBox", global.scriptArray, 1, true);
-    }
-}
-
-function spawnFromLoad(xposition, yposition) {
-    x = xposition;
-    y = yposition;
 }

@@ -13,6 +13,8 @@ if (x != xprevious or y != yprevious) {
     }
     pos_x[0] = x;
     pos_y[0] = y;
+    global.currentPosX = x;
+    global.currentPosY = y;
 }
 
 depthCorrection();
