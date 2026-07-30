@@ -18,48 +18,24 @@ function callScript() {
     ]
 }
 
-
-function transitionButton(menuFromI, menuToI) {
-    layer_set_visible(menuFromI, false);
-    layer_set_visible(menuToI, true);
+function spawnPlayer() {
+    var _inst = instance_create_layer(global.saveStruct.x, global.saveStruct.y, "Instances", playerObject);
+    with _inst{
+        x = global.saveStruct.x;
+        y = global.saveStruct.y;
+    }
 }
 
-function quitGame() {
-    game_end();
-}
-
-function unpauseGame(menuFromI) {
-    layer_set_visible(menuFromI, false);
-    global.canBePaused = true;
-}
-
-function newGame() {
-    global.mainMenuCheck = false;
-    layer_set_visible("mainMenuUI", false);
-    layer_set_visible("saveFileUI", true);
-}
-
-function mainTransition(menuFromI, menuToI) {
-    layer_set_visible(menuFromI, false);
-    if global.mainMenuCheck = true {
-        layer_set_visible("mainMenuUI", true);
+function switchTextBox() {
+    if (global.scriptArray[(global.currentIndex + 1), 0] = "scene end") {
+        layer_set_visible("textBoxUI", false);
+        global.canBePaused = true;
+        global.textBoxVisible = false;
     }
     else {
-        layer_set_visible(menuToI, true);
+        switchTextFromArray(true, global.currentIndex, "textBoxUI", "textBox", global.scriptArray, 0, false);
+        switchTextFromArray(true, global.currentIndex, "textBoxUI", "nameBox", global.scriptArray, 1, true);
     }
-}
-
-function spawnPlayer() {
-    var inst = instance_create_layer(128, 96, "Instances", playerObject);
-    with inst {
-        spawnFromLoad(128, 96);
-    }
-    
-}
-function quitToMenu(menuFromI) {
-    layer_set_visible(menuFromI, false);
-    room_goto(MainMenu);
-    layer_set_visible("mainMenuUI", true);
 }
 
 function getTextID(layer, textNode) {

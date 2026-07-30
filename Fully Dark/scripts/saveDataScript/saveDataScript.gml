@@ -1,42 +1,37 @@
-function saveDataLoad(savefileNumber) {
-    if (file_exists($"savedata{savefileNumber}.txt") = false) {
-        var _file = file_text_open_write($"savedata{savefileNumber}.txt");
-        var _struct = {
-            x: 128,
-            y: 96,
-            room: Muckshore
-        }
-        global.saveStruct = jsonReadWrite(false, _struct, _file);
-        return false;
+function newGame(savefileNumber) {
+    var _file = file_text_open_write($"savedata{savefileNumber}.txt"); //new file with default values
+    global.saveStruct = {
+        x: 128,
+        y: 96,
+        room: asset_get_index(Muckshore)
     }
-    else {
-        var _file = file_text_open_read($"savedata{savefileNumber}.txt");
-        jsonReadWrite(true, 0, _file);
-        return true;
-    }
+    jsonReadWrite(false, global.saveStruct, _file);
+    return false;
 }
 
-function saveGame(savefileNumber, instance) {
-    if (file_exists($"savedata{savefileNumber}.txt")) = false {
-        var _file = file_text_open_write($"savedata{savefileNumber}.txt");
-        with instance {
-            var _struct = {
-                x: playerObject.x,
-                y: playerObject.y,
-                room: global.currentRoom
-            }
-            var _string = json_stringify(_struct);
-            file_text_write_string(_file, _string);
-        }
+function saveGame(savefileNumber) {
+    var _file = file_text_open_write($"savedata{savefileNumber}.txt");
+    var _struct = {
+        x: global.currentPosX,
+        y: global.currentPosY,
+        room: global.currentRoom
+    }
+    jsonReadWrite(false, _struct, _file);
+}
+
+function loadGame(savefileNumber) {
+    if file_exists($"savedata{savefileNumber}.txt") {
+        var _file = file_text_open_read($"savedata{savefileNumber}.txt");
+        global.saveStruct = jsonReadWrite(true, 0, _file);
     }
 }
 
 function jsonReadWrite(read, struct, file) {
     if (read) {
         var _json = file_text_read_string(file);
-        struct = json_parse(_json);
+        var _struct = json_parse(_json);
         file_text_close(file);
-        return struct;
+        return _struct;
     }
     else {
         var _string = json_stringify(struct);

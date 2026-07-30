@@ -7,19 +7,27 @@ if (buttonType = "transition") {
         initialiseTextChange(statsIndex, "partyStatsUI", "mpText", global.statsArray, 2);
         global.currentIndex = statsIndex;
     }
+    if (menuTo = "resumeSaveFileUI" or menuTo = "saveGameUI") {
+        for (var i = 0; i < 3; i += 1) {
+            if (file_exists($"savedata{i+1}.txt") = true) {
+                layer_text_text(getTextID(menuTo, $"saveFile{i+1}"), $"savefile {i+1}");
+            }            
+        }
+    }
 }
 
 if (buttonType = "quit") { //quit game button
     quitGame();
 }
 if (buttonType = "newGame") { //new game button
-    newGame();
+    newGameButton();
     if (menuTo = "saveFileUI") {
         for (var i = 0; i < 3; i += 1) {
             if (file_exists($"savedata{i+1}.txt") = true) {
                 layer_text_text(getTextID("saveFileUI", $"saveFile{i+1}"), $"savefile {i+1}");
-            }
+            }            
         }
+        
     }
 }
 
@@ -32,16 +40,29 @@ if (buttonType = "mainTransition") { //any button going to the main menu
 }
 
 if (buttonType = "saveFile") { //button that is a save file
-    saveDataLoad(statsIndex);
     transitionButton(menuFrom, menuTo);
+    global.currentIndex = statsIndex;
 }
 
 if (buttonType = "quitToMenu") {
     quitToMenu(menuFrom);
 }
 
+if (buttonType = "saveGame") {
+    saveGame(global.currentIndex);
+    layer_set_visible(menuFrom, false);
+    layer_set_visible(menuTo, true);
+}
+
 if (buttonType = "gameStart") {
+    global.newGame = true;
+    newGame(global.currentIndex);
     transitionStart(Muckshore, fadeOutSequence, fadeInSequence);
+}
+
+if (buttonType = "gameResume") {
+    loadGame(global.currentIndex);
+    transitionStart(global.saveStruct.room, fadeOutSequence, fadeInSequence);
 }
 
 if (buttonType = "partySwitch" and frameIndex = 6) {
